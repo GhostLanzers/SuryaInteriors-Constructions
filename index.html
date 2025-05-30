@@ -38,16 +38,6 @@
         // Update on window resize
         window.addEventListener("resize", updateNavbarBrand);
       });
-      document.addEventListener("DOMContentLoaded", () => {
-        const swiper = new Swiper('.swiper-container', {
-          loop: true, // Enable looping
-          autoplay: {
-            delay: 3000, // Auto-slide every 3 seconds
-          },
-          slidesPerView: 1, // Show only one slide at a time
-          spaceBetween: 200, // No extra spacing between slides
-        });
-      });
     </script>
     <style>
       body {
@@ -162,9 +152,9 @@
       <a href="index.html" class="navbar-brand ml-lg-3" id="navbar-brand">
         <h1 class="m-0 display-5"><span class="text-warning">Surya</span>Interiors&<span class="text-warning">Constructions</span></h1>
       </a>
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
         <div class="navbar-nav m-auto py-0">
           <a href="#home" class="nav-item nav-link active">Home</a>
@@ -282,7 +272,7 @@
             <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">Projects</h1>
             <h1 class="position-absolute text-uppercase text-warning">Our Projects</h1>
           </div>
-          <div class="swiper-container">
+          <div class="hero-slider">
             <div class="swiper-wrapper">
               <!-- Project Slide 1 -->
               <div class="swiper-slide">
