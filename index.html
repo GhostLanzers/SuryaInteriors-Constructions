@@ -13,6 +13,31 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
+      // JavaScript to dynamically update the navbar brand text based on screen size
+      document.addEventListener("DOMContentLoaded", () => {
+        const navbarBrand = document.getElementById("navbar-brand");
+
+        // Function to update the navbar brand text
+        const updateNavbarBrand = () => {
+          if (window.innerWidth <= 768) {
+            // Mobile or tablet view
+            navbarBrand.innerHTML = `
+              <h1 class="m-0 display-5"><span class="text-warning">Surya</span>I&<span class="text-warning">C</span></h1>
+            `;
+          } else {
+            // Desktop view
+            navbarBrand.innerHTML = `
+              <h1 class="m-0 display-5"><span class="text-warning">Surya</span>Interiors&<span class="text-warning">Constructions</span></h1>
+            `;
+          }
+        };
+
+        // Initial check on page load
+        updateNavbarBrand();
+
+        // Update on window resize
+        window.addEventListener("resize", updateNavbarBrand);
+      });
       document.addEventListener("DOMContentLoaded", () => {
         const swiper = new Swiper('.swiper-container', {
           loop: true, // Enable looping
@@ -109,13 +134,32 @@
         color: #ffffff !important; /* White text for paragraphs */
         text-align: center; /* Center-align text */
       }
+        /* Ensure the navbar toggle button stays within the viewport */
+      .navbar-toggler {
+        position: relative; /* Ensure it stays within the navbar */
+        margin-left: auto; /* Push it to the right within the navbar */
+        margin-right: 0; /* Prevent it from moving outside the screen */
+        z-index: 10; /* Ensure it stays above other elements */
+      }
+
+      /* Prevent the black slide effect */
+      .navbar-collapse {
+        overflow: hidden; /* Prevent overflow when collapsed */
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          padding-left: 15px; /* Adjust padding for smaller screens */
+          padding-right: 15px; /* Adjust padding for smaller screens */
+        }
+      }
     </style>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
-      <a href="index.html" class="navbar-brand ml-lg-3">
+      <a href="index.html" class="navbar-brand ml-lg-3" id="navbar-brand">
         <h1 class="m-0 display-5"><span class="text-warning">Surya</span>Interiors&<span class="text-warning">Constructions</span></h1>
       </a>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
