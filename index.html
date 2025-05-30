@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surya Interiors & Constructions</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper('.swiper-container', {
+          loop: true, // Enable looping
+          autoplay: {
+            delay: 3000, // Auto-slide every 3 seconds
+          },
+          slidesPerView: 1, // Show only one slide at a time
+          spaceBetween: 200, // No extra spacing between slides
+        });
+      });
+    </script>
+    <style>
+      body {
+        background-color: black !important; /* Dark background */
+        color: #ffffff; /* Default text color to white */
+      }
+
+      h1, h2, h3, h4, h5, h6, p, span, a, .navbar-brand h1 {
+        color: #ffffff !important; /* Change black text to white */
+      }
+
+      .navbar {
+        background-color: black !important; /* Dark background for navbar */
+      }
+
+      .navbar .nav-link {
+        color: #ffffff !important; /* White text for navbar links */
+      }
+
+      .navbar .navbar-brand h1 {
+        color: #ffffff !important; /* White text for the brand */
+      }
+
+      .navbar-toggler-icon {
+        filter: invert(1); /* Make the toggler icon visible on a dark background */
+      }
+
+      .hero-section {
+        background-color: #1e1e1e; /* Dark background for hero section */
+        padding-top: 80px; /* Adjust based on your navbar height */
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          padding-top: 100px; /* Increase padding for smaller screens */
+        }
+      }
+
+      .hero-buttons {
+        margin-bottom: 20px; /* Add spacing between buttons and the image */
+      }
+
+      @media (max-width: 768px) {
+        .hero-buttons {
+          margin-bottom: 40px; /* Increase spacing for smaller screens */
+        }
+      }
+      /* Change blue buttons to yellow */
+      .btn-outline-dark {
+        border-color: #ffc107 !important; /* Yellow border */
+      }
+
+      .btn-outline-dark:hover {
+        background-color: #e0a800 !important; /* Slightly darker yellow on hover */
+        color: black !important; /* Change text color to black on hover */
+      }
+
+      /* Dark theme for Services and Testimonials sections */
+      #services, #testimonials {
+        background-color: whitesmoke !important; /* Dark background */
+        color: black !important; /* White text */
+      }
+
+      /* Card style for both Services and Testimonials */
+      .card-item {
+        background-color: black !important; /* Slightly lighter dark background for contrast */
+        color: #ffffff !important; /* White text */
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px; /* Padding inside the card */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        height: 300px; /* Fixed height for uniformity */
+        width: 100%; /* Full width within the column */
+        display: flex; /* Flexbox for alignment */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+      }
+
+      .card-item h4, .card-item h5 {
+        color: #ffc107 !important; /* Yellow text for headings */
+      }
+
+      .card-item p {
+        color: #ffffff !important; /* White text for paragraphs */
+        text-align: center; /* Center-align text */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5"><span class="text-warning">Surya</span>Interiors&<span class="text-warning">Constructions</span></h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#services" class="nav-item nav-link">Services</a>
+          <a href="#projects" class="nav-item nav-link">Projects</a>
+          <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section min-vh-100 d-flex align-items-center" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-12 text-center text-lg-left" data-aos="fade-right">
+            <div class="hero-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h1 class="display-3 text-white mb-4">Transforming Spaces Into Extraordinary Experiences</h1>
+                  <p class="text-white mb-5">Luxury interior design that reflects your unique style and personality</p>
+                </div>
+                <div class="swiper-slide">
+                  <h1 class="display-3 text-white mb-4">Crafting Timeless Elegance</h1>
+                  <p class="text-white mb-5">Where sophistication meets functionality in every detail</p>
+                </div>
+                <div class="swiper-slide">
+                  <h1 class="display-3 text-white mb-4">Bespoke Design Solutions</h1>
+                  <p class="text-white mb-5">Creating spaces that tell your unique story</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-outline-dark me-4">View Projects</a>
+              <a href="#contact" class="btn btn-outline-dark">Get Quote</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 px-5 pl-lg-0 pb-5 pb-lg-4 text-center" data-aos="fade-left">
+            <img class="img-fluid rounded shadow-lg" src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="Modern Interior Design">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container-fluid py-5" id="about">
+      <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+          <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">About</h1>
+          <h1 class="position-absolute text-uppercase text-warning">About Us</h1>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 pb-4 pb-lg-0">
+            <img class="img-fluid rounded" src="https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg" alt="">
+          </div>
+          <div class="col-lg-7">
+            <h3 class="mb-4">Luxury Interior Design Studio</h3>
+            <p>We transform spaces into extraordinary experiences. With over a decade of expertise in interior design, we create bespoke interiors that reflect your personality and lifestyle.</p>
+            <div class="row mb-3">
+              <div class="col-sm-6 py-2">
+                <h6 style="color: #e0a800 !important;">Name: <span>Sree Bheema</span></h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6 style="color: #e0a800 !important;">Experience: <span>10+ Years</span></h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6 style="color: #e0a800 !important;">Phone: <span>+91-7396697865</span></h6>
+              </div>
+              <div class="col-sm-6 py-2">
+                <h6 style="color: #e0a800 !important;">Email: <span>pobbathi.radha9@gmail.com</span></h6>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-outline-dark mr-4">Hire Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="container-fluid pt-5" id="services">
+        <div class="container">
+          <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">Services</h1>
+            <h1 class="position-absolute text-uppercase text-black">Our Services</h1>
+          </div>
+          <div class="row pb-3">
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+              <div class="card-item">
+                <h4 class="mb-3">Residential Design</h4>
+                <p class="m-0">Custom interior design solutions for homes that reflect your personal style and enhance your lifestyle.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+              <div class="card-item">
+                <h4 class="mb-3">Commercial Design</h4>
+                <p class="m-0">Professional interior design for offices, restaurants, and retail spaces that boost productivity and engagement.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+              <div class="card-item">
+                <h4 class="mb-3">Furniture Design</h4>
+                <p class="m-0">Custom furniture design and procurement services to create unique pieces that complement your space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Projects Section -->
+      <!-- Projects Section -->
+      <div class="container-fluid py-5" id="projects">
+        <div class="container">
+          <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">Projects</h1>
+            <h1 class="position-absolute text-uppercase text-warning">Our Projects</h1>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Project Slide 1 -->
+              <div class="swiper-slide">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <h3 class="mb-4">Modern Living Room</h3>
+                    <p>We take pride in delivering exceptional interior design solutions. This project showcases our expertise in creating a modern living room with a luxurious touch.</p>
+                    <div class="row mb-3">
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Location: <span>Hyderabad</span></h6>
+                      </div>
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Completion Date: <span>March 2024</span></h6>
+                      </div>
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Client: <span>Ganesh Kumar</span></h6>
+                      </div>
+                    </div>
+                    <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-outline-dark">View More</a>
+                  </div>
+                  </div>
+                  <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded" src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg" alt="Modern Living Room">
+                  </div>
+                </div>
+              </div>
+              <!-- Project Slide 2 -->
+              <div class="swiper-slide">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <h3 class="mb-4">Luxury Bedroom</h3>
+                    <p>This project highlights our ability to design a luxurious bedroom that combines comfort and elegance.</p>
+                    <div class="row mb-3">
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Location: <span>Kurnool</span></h6>
+                      </div>
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Completion Date: <span>January 2025</span></h6>
+                      </div>
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Client: <span>B Dheeraj</span></h6>
+                      </div>
+                    </div>
+                    <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-outline-dark">View More</a>
+                  </div>
+                  </div>
+                  <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded" src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg" alt="Luxury Bedroom">
+                  </div>
+                </div>
+              </div>
+              <!-- Project Slide 3 -->
+              <div class="swiper-slide">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <h3 class="mb-4">Modern Kitchen</h3>
+                    <p>A sleek and modern kitchen design that blends functionality with aesthetics.</p>
+                    <div class="row mb-3">
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Location: <span>Chennai</span></h6>
+                      </div>
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Completion Date: <span>April 2025</span></h6>
+                      </div>
+                      <div class="col-sm-6 py-2">
+                        <h6 style="color: #e0a800 !important;">Client: <span>Jerish Stephen</span></h6>
+                      </div>
+                    </div>
+                    <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-outline-dark">View More</a>
+                  </div>
+                  </div>
+                  <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded" src="https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg" alt="Modern Kitchen">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Testimonials -->
+    <div class="container-fluid py-5" id="testimonials">
+      <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+          <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">Reviews</h1>
+          <h1 class="position-absolute text-uppercase text-black">Testimonials</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-5" data-aos="fade-up">
+            <div class="card-item">
+              <i class="bi bi-chat-quote-fill text-warning mb-3" style="font-size: 2rem;"></i>
+              <p class="mb-4">"Surya Interiors transformed my living space into a masterpiece. Highly recommended!"</p>
+              <h5 class="text-warning">Bala Chandrashekhar</h5>
+              <span class="text-secondary">Entrepreneur - GHOSTLANZERS</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <i class="bi bi-chat-quote-fill text-warning mb-3" style="font-size: 2rem;"></i>
+              <p class="mb-4">"Professional and creative team. They exceeded my expectations!"</p>
+              <h5 class="text-warning">Dr. Jane Smith</h5>
+              <span class="text-secondary">Doctor</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <i class="bi bi-chat-quote-fill text-warning mb-3" style="font-size: 2rem;"></i>
+              <p class="mb-4">"Amazing designs and attention to detail. Highly recommend their services!"</p>
+              <h5 class="text-warning">Sharukh T</h5>
+              <span class="text-secondary">Bussinessmen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid py-5" id="contact">
+      <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+          <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">Contact</h1>
+          <h1 class="position-absolute text-uppercase text-warning">Contact Us</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3 class="mb-4">Get In Touch</h3>
+            <p class="mb-4">We would love to hear from you! Reach out to us using the details below:</p>
+            <div class="contact-details">
+              <h5 class="text-warning">Office Address:</h5>
+              <p>87-1094-1-B, Ganesh Nager-2, Kurnool</p>
+              <h5 class="text-warning">Phone:</h5>
+              <p>+91-7396697865, +91-9347206249</p>
+              <h5 class="text-warning">Email:</h5>
+              <p>pobbathi.radha9@gmail.com</p>
+              <h5 class="text-warning">Working Hours:</h5>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

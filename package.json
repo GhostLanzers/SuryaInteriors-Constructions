@@ -1,0 +1,21 @@
+{
+  "name": "interior-design-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "aos": "^2.3.4",
+    "lightbox2": "^2.11.4",
+    "swiper": "^11.0.6"
+  }
+}
