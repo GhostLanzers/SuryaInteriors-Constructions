@@ -19,7 +19,7 @@
 
         // Function to update the navbar brand text
         const updateNavbarBrand = () => {
-          if (window.innerWidth <= 768) {
+          if (window.innerWidth <= 700) {
             // Mobile or tablet view
             navbarBrand.innerHTML = `
               <h1 class="m-0 display-5"><span class="text-warning">Surya</span>I&<span class="text-warning">C</span></h1>
@@ -124,19 +124,6 @@
         color: #ffffff !important; /* White text for paragraphs */
         text-align: center; /* Center-align text */
       }
-        /* Ensure the navbar toggle button stays within the viewport */
-      .navbar-toggler {
-        position: relative; /* Ensure it stays within the navbar */
-        margin-left: auto; /* Push it to the right within the navbar */
-        margin-right: 0; /* Prevent it from moving outside the screen */
-        z-index: 10; /* Ensure it stays above other elements */
-      }
-
-      /* Prevent the black slide effect */
-      .navbar-collapse {
-        overflow: hidden; /* Prevent overflow when collapsed */
-      }
-
       @media (max-width: 768px) {
         .navbar {
           padding-left: 15px; /* Adjust padding for smaller screens */
@@ -264,11 +251,10 @@
         </div>
       </div>
 
-    <!-- Projects Section -->
       <!-- Projects Section -->
-      <div class="container-fluid py-5" id="projects">
+      <div class="hero-section min-vh-100 d-flex align-items-center" id="projects">
         <div class="container">
-          <div class="position-relative d-flex align-items-center justify-content-center">
+          <div class="row align-items-center">
             <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #e0a800;">Projects</h1>
             <h1 class="position-absolute text-uppercase text-warning">Our Projects</h1>
           </div>
